@@ -22,6 +22,7 @@
 		FC998BC62F1F940800DF49AC /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC52F1F940800DF49AC /* LoginUseCase.swift */; };
 		FC998BC92F1F949800DF49AC /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC82F1F949800DF49AC /* LoginResponseDTO.swift */; };
 		FC998BCD2F1F94E400DF49AC /* LoginMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BCC2F1F94E400DF49AC /* LoginMapper.swift */; };
+		FC998BCF2F1FA55700DF49AC /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BCE2F1FA55700DF49AC /* LoginResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FC998BC52F1F940800DF49AC /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		FC998BC82F1F949800DF49AC /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
 		FC998BCC2F1F94E400DF49AC /* LoginMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMapper.swift; sourceTree = "<group>"; };
+		FC998BCE2F1FA55700DF49AC /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +113,10 @@
 		FC998B852F1F90A300DF49AC /* CleanArchitectureExampleVersions */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BB22F1F90DF00DF49AC /* Presentation */,
 				FC998BBC2F1F938900DF49AC /* Domain */,
 				FC998BB92F1F929E00DF49AC /* Data */,
 				FC998BB12F1F90C200DF49AC /* App */,
-				FC998BB22F1F90DF00DF49AC /* Presentation */,
 				FC998BB32F1F90FC00DF49AC /* Resources */,
 				FC998B8C2F1F90A600DF49AC /* CleanArchitectureExampleVersions.entitlements */,
 				FC998B8D2F1F90A700DF49AC /* Preview Content */,
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */,
+				FC998BCE2F1FA55700DF49AC /* LoginResult.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				FC998BC42F1F93E600DF49AC /* LoginRepositoryProtocol.swift in Sources */,
 				FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */,
 				FC998BC92F1F949800DF49AC /* LoginResponseDTO.swift in Sources */,
+				FC998BCF2F1FA55700DF49AC /* LoginResult.swift in Sources */,
 				FC998B872F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift in Sources */,
 				FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */,
 				FC998BCD2F1F94E400DF49AC /* LoginMapper.swift in Sources */,

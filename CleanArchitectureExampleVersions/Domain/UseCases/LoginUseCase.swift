@@ -8,7 +8,7 @@
 import Foundation
 
 protocol LoginUseCaseProtocol {
-    func execute(phone: String, password: String) async -> UserDataLogin
+    func execute(phone: String, password: String) async -> LoginResult
 }
 
 final class LoginUseCase: LoginUseCaseProtocol {
@@ -19,7 +19,9 @@ final class LoginUseCase: LoginUseCaseProtocol {
         self.repository = repository
     }
 
-    func execute(phone: String, password: String) async -> UserDataLogin {
-        await repository.login(phone: phone, password: password)
+    func execute(phone: String, password: String) async -> LoginResult {
+        let user = await repository.login(phone: phone, password: password)
+        return LoginResult(token: user.token, isLoggedIn: true)
     }
 }
+
