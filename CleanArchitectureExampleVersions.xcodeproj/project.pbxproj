@@ -14,6 +14,8 @@
 		FC998B992F1F90A700DF49AC /* CleanArchitectureExampleVersionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998B982F1F90A700DF49AC /* CleanArchitectureExampleVersionsTests.swift */; };
 		FC998BA32F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BA22F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITests.swift */; };
 		FC998BA52F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BA42F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift */; };
+		FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB52F1F915200DF49AC /* LoginVM.swift */; };
+		FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB72F1F918200DF49AC /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		FC998B9E2F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureExampleVersionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC998BA22F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureExampleVersionsUITests.swift; sourceTree = "<group>"; };
 		FC998BA42F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureExampleVersionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC998BB52F1F915200DF49AC /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		FC998BB72F1F918200DF49AC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,9 @@
 		FC998B852F1F90A300DF49AC /* CleanArchitectureExampleVersions */ = {
 			isa = PBXGroup;
 			children = (
-				FC998B862F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift */,
-				FC998B882F1F90A300DF49AC /* ContentView.swift */,
-				FC998B8A2F1F90A600DF49AC /* Assets.xcassets */,
+				FC998BB12F1F90C200DF49AC /* App */,
+				FC998BB22F1F90DF00DF49AC /* Presentation */,
+				FC998BB32F1F90FC00DF49AC /* Resources */,
 				FC998B8C2F1F90A600DF49AC /* CleanArchitectureExampleVersions.entitlements */,
 				FC998B8D2F1F90A700DF49AC /* Preview Content */,
 			);
@@ -127,6 +131,40 @@
 				FC998BA42F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift */,
 			);
 			path = CleanArchitectureExampleVersionsUITests;
+			sourceTree = "<group>";
+		};
+		FC998BB12F1F90C200DF49AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FC998B882F1F90A300DF49AC /* ContentView.swift */,
+				FC998B862F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FC998BB22F1F90DF00DF49AC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BB42F1F912D00DF49AC /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FC998BB32F1F90FC00DF49AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC998B8A2F1F90A600DF49AC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC998BB42F1F912D00DF49AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BB52F1F915200DF49AC /* LoginVM.swift */,
+				FC998BB72F1F918200DF49AC /* LoginScreen.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC998B892F1F90A300DF49AC /* ContentView.swift in Sources */,
+				FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */,
 				FC998B872F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift in Sources */,
+				FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
