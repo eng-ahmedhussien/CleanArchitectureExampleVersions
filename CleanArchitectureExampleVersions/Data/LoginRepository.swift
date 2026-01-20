@@ -7,12 +7,9 @@
 
 import Foundation
 
-protocol LoginRepositoryProtocol {
-    func login(phone: String, password: String) async -> String
-}
 
 final class LoginRepository: LoginRepositoryProtocol {
-    func login(phone: String, password: String) async -> String {
-        return "token_123"
+    func login(phone: String, password: String) async -> UserDataLogin {
+        UserDataLogin(token: "token_123")
     }
 }

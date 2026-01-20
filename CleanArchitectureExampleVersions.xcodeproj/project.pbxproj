@@ -17,6 +17,9 @@
 		FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB52F1F915200DF49AC /* LoginVM.swift */; };
 		FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB72F1F918200DF49AC /* LoginScreen.swift */; };
 		FC998BBB2F1F92AA00DF49AC /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */; };
+		FC998BC22F1F93CD00DF49AC /* UserDataLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */; };
+		FC998BC42F1F93E600DF49AC /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC32F1F93E600DF49AC /* LoginRepositoryProtocol.swift */; };
+		FC998BC62F1F940800DF49AC /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC52F1F940800DF49AC /* LoginUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FC998BB52F1F915200DF49AC /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		FC998BB72F1F918200DF49AC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataLogin.swift; sourceTree = "<group>"; };
+		FC998BC32F1F93E600DF49AC /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC998BC52F1F940800DF49AC /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		FC998B852F1F90A300DF49AC /* CleanArchitectureExampleVersions */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BBC2F1F938900DF49AC /* Domain */,
 				FC998BB92F1F929E00DF49AC /* Data */,
 				FC998BB12F1F90C200DF49AC /* App */,
 				FC998BB22F1F90DF00DF49AC /* Presentation */,
@@ -173,9 +180,51 @@
 		FC998BB92F1F929E00DF49AC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BC02F1F93AF00DF49AC /* Repositories */,
 				FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FC998BBC2F1F938900DF49AC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BBF2F1F93A100DF49AC /* UseCases */,
+				FC998BBE2F1F939900DF49AC /* Repositories */,
+				FC998BBD2F1F939100DF49AC /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FC998BBD2F1F939100DF49AC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FC998BBE2F1F939900DF49AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BC32F1F93E600DF49AC /* LoginRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC998BBF2F1F93A100DF49AC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BC52F1F940800DF49AC /* LoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FC998BC02F1F93AF00DF49AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +359,12 @@
 			files = (
 				FC998BBB2F1F92AA00DF49AC /* LoginRepository.swift in Sources */,
 				FC998B892F1F90A300DF49AC /* ContentView.swift in Sources */,
+				FC998BC22F1F93CD00DF49AC /* UserDataLogin.swift in Sources */,
+				FC998BC42F1F93E600DF49AC /* LoginRepositoryProtocol.swift in Sources */,
 				FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */,
 				FC998B872F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift in Sources */,
 				FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */,
+				FC998BC62F1F940800DF49AC /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
