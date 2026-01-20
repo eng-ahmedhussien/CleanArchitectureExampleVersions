@@ -10,6 +10,7 @@ import Foundation
 
 final class LoginRepository: LoginRepositoryProtocol {
     func login(phone: String, password: String) async -> UserDataLogin {
-        UserDataLogin(token: "token_123")
+        let dto = LoginResponseDTO(token: "token_123")
+        return LoginMapper.map(dto: dto)
     }
 }

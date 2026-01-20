@@ -20,6 +20,8 @@
 		FC998BC22F1F93CD00DF49AC /* UserDataLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */; };
 		FC998BC42F1F93E600DF49AC /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC32F1F93E600DF49AC /* LoginRepositoryProtocol.swift */; };
 		FC998BC62F1F940800DF49AC /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC52F1F940800DF49AC /* LoginUseCase.swift */; };
+		FC998BC92F1F949800DF49AC /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BC82F1F949800DF49AC /* LoginResponseDTO.swift */; };
+		FC998BCD2F1F94E400DF49AC /* LoginMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BCC2F1F94E400DF49AC /* LoginMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FC998BC12F1F93CC00DF49AC /* UserDataLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataLogin.swift; sourceTree = "<group>"; };
 		FC998BC32F1F93E600DF49AC /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		FC998BC52F1F940800DF49AC /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		FC998BC82F1F949800DF49AC /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
+		FC998BCC2F1F94E400DF49AC /* LoginMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +184,9 @@
 		FC998BB92F1F929E00DF49AC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BCA2F1F94A800DF49AC /* Mappers */,
+				FC998BC72F1F948300DF49AC /* DTO */,
 				FC998BC02F1F93AF00DF49AC /* Repositories */,
-				FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -223,8 +228,25 @@
 		FC998BC02F1F93AF00DF49AC /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC998BC72F1F948300DF49AC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BC82F1F949800DF49AC /* LoginResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		FC998BCA2F1F94A800DF49AC /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BCC2F1F94E400DF49AC /* LoginMapper.swift */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,8 +384,10 @@
 				FC998BC22F1F93CD00DF49AC /* UserDataLogin.swift in Sources */,
 				FC998BC42F1F93E600DF49AC /* LoginRepositoryProtocol.swift in Sources */,
 				FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */,
+				FC998BC92F1F949800DF49AC /* LoginResponseDTO.swift in Sources */,
 				FC998B872F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift in Sources */,
 				FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */,
+				FC998BCD2F1F94E400DF49AC /* LoginMapper.swift in Sources */,
 				FC998BC62F1F940800DF49AC /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
