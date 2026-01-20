@@ -16,6 +16,7 @@
 		FC998BA52F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BA42F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift */; };
 		FC998BB62F1F915200DF49AC /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB52F1F915200DF49AC /* LoginVM.swift */; };
 		FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BB72F1F918200DF49AC /* LoginScreen.swift */; };
+		FC998BBB2F1F92AA00DF49AC /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FC998BA42F1F90A700DF49AC /* CleanArchitectureExampleVersionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureExampleVersionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC998BB52F1F915200DF49AC /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		FC998BB72F1F918200DF49AC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		FC998B852F1F90A300DF49AC /* CleanArchitectureExampleVersions */ = {
 			isa = PBXGroup;
 			children = (
+				FC998BB92F1F929E00DF49AC /* Data */,
 				FC998BB12F1F90C200DF49AC /* App */,
 				FC998BB22F1F90DF00DF49AC /* Presentation */,
 				FC998BB32F1F90FC00DF49AC /* Resources */,
@@ -165,6 +168,14 @@
 				FC998BB72F1F918200DF49AC /* LoginScreen.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		FC998BB92F1F929E00DF49AC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC998BBA2F1F92AA00DF49AC /* LoginRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC998BBB2F1F92AA00DF49AC /* LoginRepository.swift in Sources */,
 				FC998B892F1F90A300DF49AC /* ContentView.swift in Sources */,
 				FC998BB82F1F918200DF49AC /* LoginScreen.swift in Sources */,
 				FC998B872F1F90A300DF49AC /* CleanArchitectureExampleVersionsApp.swift in Sources */,

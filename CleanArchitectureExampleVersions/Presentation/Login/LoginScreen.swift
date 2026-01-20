@@ -10,14 +10,17 @@ import SwiftUI
 struct LoginScreen: View {
 
     @StateObject private var vm = LoginVM()
+    
+    @State var phone: String
+    @State var password: String
 
     var body: some View {
         VStack {
-            TextField("Phone", text: $vm.phone)
-            SecureField("Password", text: $vm.password)
+            TextField("Phone", text: $phone)
+            SecureField("Password", text: $password)
 
             Button("Login") {
-                Task { await vm.login() }
+                Task { await vm.login(phone: phone, password: password) }
             }
 
             if let token = vm.token {
